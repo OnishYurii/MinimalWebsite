@@ -1,0 +1,10 @@
+ :root {
+    --primary-color: #0A224A;
+    --background-color: #F7FAFF;
+    --input-color: #B6B6B6;
+    --input-error-color: #E74A3B;
+    --input-text-color: #D9D9D9;
+    --agreement-color: #7A7A7A;
+    --btn-hover-color: #061835;
+    --white-color: #FFF;
+}
