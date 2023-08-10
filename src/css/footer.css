@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--primary-color);
+    padding-top: 42px;
+    padding-bottom: 16px;
+}
+
+.logo-icon {
+    fill: var(--white-color);
+    margin-bottom: 42px;
+}
+
+.footer-menu-link {
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials-icon {
+    fill: var(--white-color);
+}
