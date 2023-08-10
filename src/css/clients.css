@@ -1,4 +1,4 @@
-.clients-conteiner {
+.clients {
   padding: 60px;
   background-color: #f7faff;
 }
@@ -63,4 +63,18 @@
   align-items: flex-start;
   gap: 4px;
   padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 60px;
+  }
 }
