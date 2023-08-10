@@ -73,3 +73,7 @@
 .privacy-link {
     text-decoration-line: underline
 }
+
+@media screen and (min-width: 768px) {
+    
+}
