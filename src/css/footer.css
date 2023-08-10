@@ -4,11 +4,23 @@
     padding-bottom: 16px;
 }
 
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+}
 .logo-icon {
     fill: var(--white-color);
-    margin-bottom: 42px;
 }
 
+.footer-menu-list {
+    margin-bottom: 36px;
+}
+
+.footer-menu-item:not(:last-child) {
+    margin-bottom: 8px;
+}
 .footer-menu-link {
     color: var(--white-color);
     font-size: 16px;
@@ -23,4 +35,41 @@
 
 .footer-socials-icon {
     fill: var(--white-color);
+}
+
+.footer-addres-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-addres-list {
+    margin-bottom: 35px;
+}
+.footer-addres-link {
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.01em;
+}
+
+.mail-hidden {
+    display: none;
+}
+
+.footer-contacts-list {
+    margin-bottom: 64px;
+}
+
+.footer-text {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.07em;
+    opacity: 0.6;
+}
+
+.privacy-link {
+    text-decoration-line: underline
 }
