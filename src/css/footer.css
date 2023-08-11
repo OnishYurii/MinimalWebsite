@@ -1,17 +1,22 @@
 .footer {
     background-color: var(--primary-color);
-    padding-top: 42px;
+    padding-top: 36px;
     padding-bottom: 16px;
 }
 
-.footer-top {
+.footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 36px;
 }
+
+.footer-left {
+    padding-top: 6px;
+}
+
+
 .logo-icon {
     fill: var(--white-color);
+    margin-bottom: 42px;
 }
 
 .footer-menu-list {
@@ -75,5 +80,22 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+.footer {
+    padding-bottom: 36px;
+    }
+
+.footer-tablet-left {
+    display: flex;
+    gap: 241px;
 }
+
+.footer-menu-list {
+    margin-bottom: 0;
+}
+
+.footer-addres {
+    margin-top: -110px;
+}
+}
+
+
