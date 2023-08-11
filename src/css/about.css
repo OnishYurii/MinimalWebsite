@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+}
+.about-container {
+  background-color: var(--background-color);
+}
+.about-title {
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.about-title::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: var(--primary-color);
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-second-title {
+  color: var(--primary-color, #0a224a);
+  font-size: 28px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  max-width: 343px;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  max-width: 343px;
+  color: var(--primary-color, #0a224a);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.prefer-list {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 64px;
+  justify-content: center;
+  align-items: center;
+}
+.prefer-title {
+  margin-bottom: 14px;
+  color: var(--primary-color, #0a224a);
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.prefer-text {
+  color: var(--primary-color, #0a224a);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 170px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/*=================================Tablet 768px==================*/
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: var(--background-color);
+  }
+  .about-container {
+    background-color: white;
+  }
+  .about-content {
+    max-width: 576px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .about-second-title {
+    max-width: 576px;
+    width: 100%;
+    color: var(--blue-font, #0a224a);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  .about-text {
+    max-width: 576px;
+    width: 100%;
+    font-size: 18px;
+  }
+  .prefer-list {
+    flex-direction: row;
+    gap: 33px;
+  }
+  .cover-section {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*=================================Tablet 768px==================*/
+@media screen and (min-width: 1280px) {
+  .cover-section {
+    display: flex;
+    gap: 24px;
+  }
+}
