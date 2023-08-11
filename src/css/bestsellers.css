@@ -35,10 +35,6 @@
   line-height: 1.5;
   padding-top: 10px;
 }
-.best-img {
-  width: 343px;
-  height: 193px;
-}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -57,10 +53,6 @@
     line-height: 1.4;
     text-transform: uppercase;
     padding-bottom: 30px;
-  }
-  .best-img {
-    width: 336px;
-    height: 193px;
   }
 }
 
