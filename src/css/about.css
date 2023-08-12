@@ -78,16 +78,20 @@
 /*=================================Tablet 768px==================*/
 @media screen and (min-width: 768px) {
   .container {
-    background-color: var(--background-color);
   }
   .about-container {
     background-color: white;
+  }
+  .for-backgroung {
+    background-color: var(--background-color);
+    padding-top: 36px;
+    padding-bottom: 34px;
+    margin-bottom: 30px;
   }
   .about-content {
     max-width: 576px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 30px;
   }
   .about-second-title {
     max-width: 576px;
@@ -106,18 +110,39 @@
   .prefer-list {
     flex-direction: row;
     gap: 33px;
+    padding-bottom: 0;
   }
-  .cover-section {
-    max-width: 768px;
-    width: 100%;
+
+  .card-img {
+    max-width: 704px;
     margin: 0 auto;
   }
 }
 
-/*=================================Tablet 768px==================*/
+/*=================================Desktop 1280px==================*/
 @media screen and (min-width: 1280px) {
-  .cover-section {
+  .container {
+    padding-right: 0;
+  }
+  .about-container {
     display: flex;
     gap: 24px;
+  }
+
+  .card-img {
+    width: 536px;
+    max-height: 540px;
+    object-fit: fill;
+    padding-right: 60px;
+  }
+  .for-backgroung {
+    display: flex;
+    max-width: 760px;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 34px;
+  }
+  .prefer-list {
+    padding-bottom: 0;
   }
 }
