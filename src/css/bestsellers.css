@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
     padding: 0 60px;
@@ -86,6 +86,7 @@
 
   .best-list {
     display: flex;
+    gap: 24px;
   }
   .best-item {
     padding-bottom: 0;
@@ -94,7 +95,9 @@
   .desk-div {
     display: flex;
     flex-direction: column;
-    gap: 30px 20px;
-    padding-left: 24px;
+    justify-content: space-between;
+  }
+  .mob-div .tab-div {
+    gap: 30px;
   }
 }
