@@ -82,31 +82,20 @@
   }
   .bestsellers {
     padding-bottom: 100px;
-    width: 1216px;
-    margin: auto;
   }
 
   .best-list {
     display: flex;
   }
-  /* .tab-div {
-    flex-direction: column;
-  }
-  .mob-div {
-    flex-direction: column;
-  } */
-  .tab-div {
-    display: flex;
-    gap: 20px;
-  }
   .best-item {
-    padding-bottom: 30px;
-  }
-  .mob-div {
-    display: flex;
-    gap: 20px;
+    padding-bottom: 0;
   }
   .main-div {
     padding-right: 24px;
+  }
+  .desk-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 20px;
   }
 }
