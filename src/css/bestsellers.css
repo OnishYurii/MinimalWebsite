@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .container {
     max-width: 1440px;
     padding: 0 60px;
@@ -90,12 +90,11 @@
   .best-item {
     padding-bottom: 0;
   }
-  .main-div {
-    padding-right: 24px;
-  }
+
   .desk-div {
     display: flex;
     flex-direction: column;
     gap: 30px 20px;
+    padding-left: 24px;
   }
 }
