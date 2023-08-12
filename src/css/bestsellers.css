@@ -1,10 +1,8 @@
-.container {
-  max-width: 375px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
 .bestsellers {
   padding-bottom: 64px;
+}
+.best-item-foto {
+  margin-bottom: 30px;
 }
 .best-head-title {
   color: var(--primary-color, #0a224a);
@@ -38,25 +36,22 @@
 .mob-div {
   display: none;
 }
-.best-item {
-  padding-bottom: 30px;
+.tab-div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
   .bestsellers {
     padding-bottom: 100px;
+  }
+  .best-item-foto {
+    margin-bottom: 32px;
   }
   .best-head-title {
     font-size: 32px;
     line-height: 1.4;
     padding-bottom: 30px;
-  }
-  .best-item {
-    padding-bottom: 32px;
   }
   .best-title {
     font-size: 18px;
@@ -66,24 +61,21 @@
     font-size: 18px;
   }
   .tab-div {
-    display: flex;
-    gap: 32px;
+    flex-direction: row;
+    margin-bottom: 32px;
   }
   .mob-div {
     display: flex;
     gap: 32px;
   }
 }
-
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 60px;
-  }
   .bestsellers {
     padding-bottom: 100px;
   }
-
+  .best-item-foto {
+    margin-bottom: 0;
+  }
   .best-list {
     display: flex;
     gap: 24px;
@@ -91,13 +83,13 @@
   .best-item {
     padding-bottom: 0;
   }
+  .mob-div .tab-div {
+    gap: 30px;
+  }
 
   .desk-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  .mob-div .tab-div {
-    gap: 30px;
   }
 }
