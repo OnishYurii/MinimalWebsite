@@ -11,12 +11,12 @@
 
 .footer-logo-container {
     padding-top: 6px;
+    margin-bottom: 42px;
 }
 
 
 .logo-icon {
-    fill: var(--white-color);
-    margin-bottom: 42px;
+    fill: var(--white-color);   
 }
 
 .footer-menu-list {
@@ -92,6 +92,7 @@
 
 .footer-logo-container {
     padding-top: 12px;
+    margin-bottom: 0;
 }
 
 .logo-icon {
@@ -146,5 +147,42 @@
     letter-spacing: 0.07em;
 }
 }
+
+@media screen and (min-width: 1440px) {
+.footer-tablet-left {
+    gap: 209px;
+    margin-bottom: 24px;
+}
+
+.footer-menu-list {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-addres {
+    display: flex;
+    margin-top: 0px;
+    gap: 87px;
+}
+
+.footer-addres-list {
+    margin-bottom: 0;
+}
+
+.footer-contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 82px;
+    margin-bottom: 35px;
+}
+
+.footer-contacts-item {
+    width: calc((100% - 82px) / 2);
+}
+.footer-socials {
+    gap: 30px;
+}
+}
+
 
 
