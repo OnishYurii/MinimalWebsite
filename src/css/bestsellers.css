@@ -8,30 +8,27 @@
   color: var(--primary-color, #0a224a);
   font-family: 'Roboto';
   font-size: 28px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 .best-title {
   color: var(--primary-color, #0a224a);
   font-family: 'Roboto';
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  padding-top: 14px;
+  margin-top: 14px;
 }
 .best-text {
   color: var(--primary-color, #0a224a);
   font-family: 'Roboto';
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.5;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .mob-div {
   display: none;
@@ -51,17 +48,18 @@
   .best-head-title {
     font-size: 32px;
     line-height: 1.4;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .best-title {
     font-size: 18px;
-    padding-top: 15px;
+    margin-top: 15px;
   }
   .best-text {
     font-size: 18px;
   }
   .tab-div {
     flex-direction: row;
+    gap: 32px;
     margin-bottom: 32px;
   }
   .mob-div {
@@ -70,9 +68,6 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .bestsellers {
-    padding-bottom: 100px;
-  }
   .best-item-foto {
     margin-bottom: 0;
   }
@@ -83,8 +78,13 @@
   .best-item {
     padding-bottom: 0;
   }
-  .mob-div .tab-div {
-    gap: 30px;
+  .tab-div {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .mob-div {
+    gap: 20px;
   }
 
   .desk-div {
