@@ -76,7 +76,7 @@
     opacity: 0.6;
 }
 
-.privacy-link {
+.footer-privacy-link {
     text-decoration-line: underline
 }
 
@@ -88,6 +88,10 @@
 .footer-tablet-left {
     display: flex;
     gap: 241px;
+}
+
+.footer-logo-container {
+    padding-top: 12px;
 }
 
 .logo-icon {
@@ -134,6 +138,12 @@
 .footer-socials-icon {
     width: 40px;
     height: 40px;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.07em;
 }
 }
 
