@@ -1,27 +1,24 @@
 .clients {
-  /* padding: 60px; */
-  padding: 36px 16px;
+  padding: 36px 0;
   background-color: #f7faff;
 }
 
 .clients-title {
   color: #0a224a;
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.41;
+  line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 .clients-list {
   display: flex;
-  /* gap: 24px; */
 }
 
 .clients-item {
   max-width: 100%;
-  /* width: calc((100% - 32px) / 3); */
   padding: 24px;
   border-radius: 8px;
   background-color: #fff;
@@ -29,40 +26,40 @@
 
 .clients-subtitle {
   color: #0a224a;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-style: normal;
   font-weight: 700;
-  line-height: 2.25;
+  line-height: 1.77;
   text-transform: uppercase;
 }
 .clients-subtitle-text {
   color: #0a224a;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.28;
 }
 
 .clients-text {
   color: #0a224a;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.42;
 }
 
 .clients-subtitle-div {
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  margin-bottom: 24px;
 }
 .clients-subtitle-div-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 16px;
 }
 .clients-tab {
   display: none;
@@ -70,6 +67,7 @@
 .clients-mob {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -77,6 +75,25 @@
   }
   .clients {
     padding: 36px 32px;
+  }
+  .clients-title {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  .clients-subtitle {
+    font-size: 20px;
+    line-height: 2.25;
+  }
+  .clients-subtitle-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .clients-subtitle-div {
+    margin-bottom: 14px;
+  }
+  .clients-text {
+    font-size: 18px;
+    line-height: 1.5;
   }
   .clients-tab {
     display: flex;
@@ -88,6 +105,10 @@
   .clients-item {
     width: calc((100% - 16px) / 2);
   }
+  .clients-img {
+    width: 56px;
+    height: 56px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -98,12 +119,15 @@
   .clients {
     padding: 60px;
   }
+  .clients-subtitle-div {
+    margin-bottom: 16px;
+  }
   .clients-mob {
     display: flex;
     flex-direction: column;
   }
   .clients-item {
-    width: calc((100% - 32px) / 3);
+    width: calc((100% - 48px) / 3);
     padding: 32px;
   }
   .clients-list {
