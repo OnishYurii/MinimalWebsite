@@ -70,7 +70,7 @@
     letter-spacing: 0.01em;
 }
 
-.footer-addres-link:active {
+.footer-addres-hover:active {
     text-decoration: underline;
 }
 
@@ -197,11 +197,11 @@
     margin-bottom: 0;
 }
 
-.footer-addres-link {
+.footer-addres-hover {
     transition: text-decoration 300ms ease, color 300ms ease;
 }
 
-.footer-addres-link:is(:hover, :focus) {
+.footer-addres-hover:is(:hover, :focus) {
     text-decoration: underline;
 }
 
