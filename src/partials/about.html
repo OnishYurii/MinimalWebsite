@@ -1,5 +1,5 @@
 <section class="about-container">
-  <div class="container">
+  <div class="container desktop">
     <div class="for-backgroung">
       <div class="about-content">
         <h2 class="about-title">About us</h2>
@@ -33,33 +33,39 @@
         </ul>
       </div>
     </div>
+    <picture class="about-picture">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1440px)"
+        srcset="./img/about-desk-1x.jpg 1x, ./img/about-desk-2x.jpg 2x"
+        type="image/jpg"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="./img/about-tab-1x.jpg 1x, ./img/about-tab-2x.jpg 2x"
+        type="image/jpg"
+      />
+      <!-- Mobile screen -->
+      <!-- <source
+        class="mob-picture"
+        media="(min-width: 320px)"
+        srcset="./img/about-mob-1x.jpg 1x, ./img/about-mob-2x.jpg 2x"
+        type="image/jpg"
+      /> -->
+      <img
+        class="card-img"
+        src="./img/about-tab-1x.jpg"
+        alt="sofa"
+        loading="lazy"
+        width="767"
+      />
+    </picture>
   </div>
-  <picture class="about-picture">
-    <!-- Desktop screen -->
-    <source
-      media="(min-width: 1440px)"
-      srcset="./img/about-desk-1x.jpg 1x, ./img/about-desk-2x.jpg 2x"
-      type="image/jpg"
-    />
-    <!-- Tablet screen -->
-    <source
-      media="(min-width: 768px)"
-      srcset="./img/about-tab-1x.jpg 1x, ./img/about-tab-2x.jpg 2x"
-      type="image/jpg"
-    />
-    <!-- Mobile screen -->
-    <source
-      class="mob-picture"
-      media="(min-width: 320px)"
-      srcset="./img/about-mob-1x.jpg 1x, ./img/about-mob-2x.jpg 2x"
-      type="image/jpg"
-    />
-    <img
-      class="card-img"
-      src="./img/about-mob-1x.jpg"
-      alt="sofa"
-      loading="lazy"
-      width="767"
-    />
-  </picture>
+  <img
+    class="mob-img"
+    srcset="./img/about-mob-1x.jpg 1x, ./img/about-mob-2x.jpg 2x"
+    src="./img/about-mob-1x.jpg"
+    alt=""
+  />
 </section>
