@@ -14,6 +14,13 @@
     margin-bottom: 42px;
 }
 
+.footer-logo:active .logo-icon {
+    fill: var(--agreement-color);
+}
+
+.footer-privacy-link:active {
+    opacity: 0.3;
+}
 
 .logo-icon {
     fill: var(--white-color);   
@@ -236,7 +243,12 @@
 .logo-icon {
     transition: fill 300ms ease, color 300ms ease;
 }
+
+.footer-privacy-link:is(:hover, :focus) {
+    opacity: 0.3;
 }
 
-
-
+.footer-privacy-link {
+    transition: opacity 300ms ease, color 300ms ease;
+}
+}
