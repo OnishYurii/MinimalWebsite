@@ -125,10 +125,14 @@
 
 .footer-addres-link {
     font-size: 19px;
-    letter-spacing: 0.01;
+    letter-spacing: 0.01em;
 }
 
 .footer-addres-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.footer-item-block {
     margin-bottom: 24px;
 }
 
@@ -174,6 +178,10 @@
     flex-wrap: wrap;
     column-gap: 82px;
     margin-bottom: 35px;
+}
+
+.footer-item-block {
+    margin-bottom: 0;
 }
 
 .footer-contacts-item {
