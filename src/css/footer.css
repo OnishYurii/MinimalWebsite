@@ -38,8 +38,16 @@
     gap: 16px;
 }
 
+.footer-socials-link {
+    color: var(--white-color);
+}
+
+.footer-socials-link:active {
+    color: var(--agreement-color);
+}
+
 .footer-socials-icon {
-    fill: var(--white-color);
+    fill: currentColor;
 }
 
 .footer-addres-item:not(:last-child) {
@@ -188,6 +196,14 @@
 }
 .footer-socials {
     gap: 30px;
+}
+
+.footer-socials-link {
+    transition: background-color 300ms ease, color 300ms ease;
+}
+
+.footer-socials-link:is(:hover, :focus) {
+    color: var(--agreement-color);
 }
 }
 
