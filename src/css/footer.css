@@ -175,7 +175,6 @@
 
 .footer-contacts-list {
     display: flex;
-    flex-wrap: wrap;
     column-gap: 82px;
     margin-bottom: 35px;
 }
