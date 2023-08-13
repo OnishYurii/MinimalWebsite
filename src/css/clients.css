@@ -7,14 +7,10 @@
   color: #0a224a;
   font-size: 28px;
   text-align: center;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-.clients-list {
-  display: flex;
 }
 
 .clients-item {
@@ -27,26 +23,20 @@
 .clients-subtitle {
   color: #0a224a;
   font-size: 18px;
-  text-align: center;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.77;
   text-transform: uppercase;
 }
 .clients-subtitle-text {
   color: #0a224a;
-  text-align: center;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.28;
+  text-align: center;
 }
 
 .clients-text {
   color: #0a224a;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.42;
 }
 
@@ -59,6 +49,7 @@
 .clients-subtitle-div-text {
   display: flex;
   flex-direction: column;
+  gap: 2px;
   align-items: flex-start;
 }
 .clients-tab {
@@ -69,13 +60,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-  .clients {
-    padding: 36px 32px;
-  }
   .clients-title {
     font-size: 32px;
     line-height: 1.4;
@@ -85,12 +69,13 @@
     line-height: 2.25;
   }
   .clients-subtitle-text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
   }
   .clients-subtitle-div {
     margin-bottom: 14px;
   }
+
   .clients-text {
     font-size: 18px;
     line-height: 1.5;
@@ -100,6 +85,7 @@
     flex-direction: column;
   }
   .clients-list {
+    display: flex;
     gap: 16px;
   }
   .clients-item {
@@ -111,13 +97,9 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 60px;
-  }
+@media screen and (min-width: 1440px) {
   .clients {
-    padding: 60px;
+    padding: 60px 0;
   }
   .clients-subtitle-div {
     margin-bottom: 16px;
