@@ -33,6 +33,10 @@
     line-height: 1.5;
 }
 
+.footer-menu-link:active {
+    text-decoration: underline;
+}
+
 .footer-socials {
     display: flex;
     gap: 16px;
@@ -64,6 +68,10 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.01em;
+}
+
+.footer-addres-link:active {
+    text-decoration: underline;
 }
 
 .mail-hidden {
@@ -171,6 +179,14 @@
     gap: 30px;
 }
 
+.footer-menu-link {
+    transition: text-decoration 300ms ease, color 300ms ease;
+}
+
+.footer-menu-link:is(:hover, :focus) {
+    text-decoration: underline;
+}
+
 .footer-addres {
     display: flex;
     margin-top: 0px;
@@ -179,6 +195,14 @@
 
 .footer-addres-list {
     margin-bottom: 0;
+}
+
+.footer-addres-link {
+    transition: text-decoration 300ms ease, color 300ms ease;
+}
+
+.footer-addres-link:is(:hover, :focus) {
+    text-decoration: underline;
 }
 
 .footer-contacts-list {
@@ -199,7 +223,7 @@
 }
 
 .footer-socials-link {
-    transition: background-color 300ms ease, color 300ms ease;
+    transition: color 300ms ease, color 300ms ease;
 }
 
 .footer-socials-link:is(:hover, :focus) {
