@@ -50,8 +50,13 @@
 }
 
 .hero-button:hover,
+.hero-button:focus,
 .hero-button:active {
   background-color: var(--btn-hover-color);
+}
+
+.hero-button {
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 @media screen and (min-width: 768px) {
