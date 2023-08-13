@@ -229,6 +229,13 @@
 .footer-socials-link:is(:hover, :focus) {
     color: var(--agreement-color);
 }
+
+.footer-logo:is(:hover, :focus) .logo-icon {
+    fill: var(--agreement-color);
+}
+.logo-icon {
+    transition: fill 300ms ease, color 300ms ease;
+}
 }
 
 
