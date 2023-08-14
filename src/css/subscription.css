@@ -1,0 +1,382 @@
+/* ----- reset styles ----- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* ----- parent and container ----- */
+.newsletter {
+  padding: 100px 0;
+  margin: 0 auto;
+  background-color: var(--white, #fff);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 290px);
+  justify-content: center;
+  gap: 30px;
+}
+
+/* ---- text box ---- */
+.text-input-box {
+  max-width: 536px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+ color: var(--primary-color);
+}
+
+.text-input-box .title {
+   color: var(--primary-color, #0A224A);
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.text-input-box .text {
+  color: var(--primary-color, #0A224A);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+/* ---- form box ---- */
+.form-box{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- input --- */
+.form-input-box{
+  position: relative;
+}
+
+.form-input{
+  padding: 11px 44px 11px 20px;
+  width: 226px;
+  outline: 0;
+  border: 1px solid var(--dark-grey, #B6B6B6);
+  color: var(--blue-font, #0A224A);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form-input::placeholder{
+  color: var(--grey, #D9D9D9);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form-input:focus{
+  border: 1px solid var(--blue-font, #0A224A);
+}
+
+.form-input.error{
+  color: #E74A3B;
+  border: 1px solid #E74A3B;
+}
+
+.error-icon{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  fill: #E74A3B;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 20px;
+  display: none;
+}
+
+/* --- checkbox --- */
+.checkbox-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.checkbox-box .checkbox{
+  display: none;
+}
+.checkbox-box .fake{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px #B6B6B6 solid;
+  background-color: transparent;
+  position: relative;
+  transition: .2s;
+}
+.checkbox-box .fake::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url("../img/icons.svg#icon-check");
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .2s;
+}
+.checkbox-box .checkbox:checked + .fake::before{
+  opacity: 1;
+}
+.checkbox-box .checkbox:checked + .fake{
+  background-color: #0A224A;
+  border: 1px #0A224A solid;
+}
+.checkbox-box .text{
+  color: #7A7A7A;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* --- button send --- */
+.btn-send{
+  border: 0;
+  background-color: var(--blue-font, #0A224A);
+  padding: 17px 65px;
+  color: var(--white, #FFF);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 224px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+  margin-top: 12px;
+}
+.btn-send:hover{
+  background-color: #061835;
+}
+
+/* ---- image box ---- */
+.image-box{
+  width: 290px;
+  height: 254px;
+}
+
+.image-box img{
+  width: 100%;
+  height: 100%;
+}
+
+/*? ---------- MOBILE ----------*/
+@media screen and (min-width: 375px) {
+    /* ----- parent and container ----- */
+    .container {
+      grid-template-columns: repeat(auto-fit, 343px);
+    }
+  
+    /* ---- input ---- */
+    .form-input {
+      width: 279px;
+    }
+  
+    /* ---- image box ---- */
+    .image-box {
+      width: 343px;
+      height: 300px;
+    }
+  }
+  
+  /*? ---------- TABLET ----------*/
+  @media screen and (min-width: 768px) {
+    /* ----- parent and container ----- */
+    .container {
+      grid-template-columns: repeat(auto-fit, 704px);
+      gap: 64px;
+    }
+  
+    /* ---- text box ---- */
+    .text-input-box .title {
+      font-size: 32px;
+      line-height: 45px;
+      text-align: left;
+    }
+    .text-input-box .text {
+      font-size: 18px;
+      line-height: 27px;
+      margin-top: 30px;
+    }
+  
+    /* ---- form box ---- */
+    .form-box {
+      margin-top: 20px;
+    }
+    /* --- input --- */
+    .form-input {
+      width: 472px;
+    }
+    .form-input::placeholder {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  
+    /* --- checkbox --- */
+    .checkbox-box .text {
+      font-size: 18px;
+      line-height: 27px;
+      margin: 0;
+    }
+  
+    /* --- button send --- */
+    .btn-send {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+  
+    /* ---- image box ---- */
+    .image-box {
+      width: 704px;
+      height: 396px;
+    }
+  }
+  
+  /*? ---------- DEKSTOP ----------*/
+  @media screen and (min-width: 1158px) {
+    /* ----- parent and container ----- */
+    .container {
+      grid-template-columns: repeat(auto-fit, 460px);
+      gap: 100px;
+    }
+  
+    /* ---- text box ---- */
+    .text-input-box .title {
+      font-size: 32px;
+      line-height: 45px;
+      text-align: left;
+    }
+    .text-input-box .text {
+      font-size: 18px;
+      line-height: 27px;
+      margin-top: 31px;
+    }
+  
+    /* ---- form box ---- */
+    .form-box {
+      margin-top: 20px;
+    }
+    /* --- input --- */
+    .form-input {
+      width: 396px;
+    }
+    .form-input::placeholder {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  
+    /* --- checkbox --- */
+    .checkbox-box .text {
+      font-size: 18px;
+      line-height: 27px;
+      margin: 0;
+    }
+  
+    /* --- button send --- */
+    .btn-send {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 11px;
+    }
+  
+    /* ---- image box ---- */
+    .image-box {
+      width: 460px;
+      height: 410px;
+    }
+  }
+  
+  /*? ---------- DEKSTOP ----------*/
+  @media screen and (min-width: 1158px) {
+    /* ----- parent and container ----- */
+    .container {
+      grid-template-columns: repeat(auto-fit, 536px);
+      gap: 100px;
+    }
+  
+    /* ---- text box ---- */
+    .text-input-box .title {
+      font-size: 32px;
+      line-height: 45px;
+      text-align: left;
+    }
+    .text-input-box .text {
+      font-size: 18px;
+      line-height: 27px;
+      margin-top: 31px;
+    }
+  
+    /* ---- form box ---- */
+    .form-box {
+      margin-top: 20px;
+    }
+    /* --- input --- */
+    .form-input {
+      width: 472px;
+    }
+    .form-input::placeholder {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  
+    /* --- checkbox --- */
+    .checkbox-box .text {
+      font-size: 18px;
+      line-height: 27px;
+      margin: 0;
+    }
+  
+    /* --- button send --- */
+    .btn-send {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 11px;
+    }
+  
+    /* ---- image box ---- */
+    .image-box {
+      width: 460px;
+      height: 410px;
+    }
+  }
