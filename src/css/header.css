@@ -93,6 +93,28 @@ header {
   color: var(--agreement-color);
 }
 
+.go-top {
+  position: fixed;
+  right: 0px;
+  bottom: 30px;
+  cursor: pointer;
+  display: none;
+  fill: var(--agreement-color);
+  border: none;
+  transition: fill 300ms ease;
+  /* width: 30px;
+   height: 30px; */
+}
+
+.go-top:hover,
+.go-top:active {
+  fill: var(--input-color);
+}
+
+.go-top--show {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
  
   .header-logo-icon {
@@ -146,5 +168,10 @@ header {
 
   .nav-menu-link:is(:hover, :focus) {
     text-decoration: underline;
+  }
+
+  .go-top {
+    right: 30px;
+    bottom: 50px;
   }
 }
