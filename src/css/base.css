@@ -5,10 +5,6 @@ body {
   background-color: var(--white-color);
 }
 
-html {
-  scroll-behavior: initial;
-}
-
 .container {
   max-width: 375px;
   padding: 0 16px;

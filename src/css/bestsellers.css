@@ -78,6 +78,7 @@
   .best-list {
     display: flex;
     gap: 24px;
+    align-items: center;
   }
   .best-item {
     padding-bottom: 0;
@@ -94,6 +95,5 @@
   .desk-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 }

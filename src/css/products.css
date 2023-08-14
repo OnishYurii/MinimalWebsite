@@ -1,6 +1,5 @@
 .products {
     padding-bottom: 64px;
-    padding-top: 64px;
 }
 
 .products-title {
@@ -30,7 +29,6 @@
 @media screen and (min-width: 768px) {
     .products {
         padding-bottom: 100px;
-        padding-top: 100px;
     }
 
     .products-title {
