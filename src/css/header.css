@@ -54,6 +54,7 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  transition: color 300ms ease;
 }
 
 .mob-container {
@@ -71,6 +72,18 @@ header {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.header-logo-link:active .header-logo-icon {
+  fill: var(--agreement-color);
+}
+
+.header-logo-icon {
+  transition: fill 300ms ease;
+}
+
+.mob-menu-link:active {
+  color: var(--agreement-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -118,5 +131,13 @@ header {
 
   .mob-menu {
     display: none;
+  }
+
+  .header-logo-link:is(:hover, :focus) .header-logo-icon {
+    fill: var(--agreement-color);
+  }
+
+  .nav-menu-link:is(:hover, :focus) {
+    text-decoration: underline;
   }
 }
