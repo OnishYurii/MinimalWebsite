@@ -1,5 +1,5 @@
-.price-container {
-  padding: 64px 16px;
+.price {
+  padding: 64px 0;
 }
 
 .product-item {
@@ -36,34 +36,21 @@
 .product-title:hover::before {
   content: '';
   width: 24px;
-  height: 2px;
   background-color: var(--primary-color);
 }
 
 .product-price {
   color: var(--primary-color);
   text-align: right;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 @media screen and (min-width: 768px) {
-  .price-container {
-    max-width: 768px;
-    padding: 100px 32px;
+  .price {
+    padding-bottom: 100px;
+    padding-top: 0;
   }
 
   .product-title {
@@ -73,12 +60,5 @@
 
   .product-price {
     font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .price-container {
-    max-width: 1440px;
-    padding: 100px 172px;
   }
 }
