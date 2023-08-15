@@ -1,0 +1,205 @@
+/* ----- parent and container ----- */
+.newsletter {
+    padding: 64px 0;
+    background-color: var(--white, #fff);
+}
+
+/* ---- text box ---- */
+
+.text-input-box .title {
+    color: var(--primary-color, #0A224A);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 176px;
+}
+
+.text-input-box .text {
+    color: var(--primary-color, #0A224A);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    width: 343px;
+}
+
+.text-input-box {
+    margin-bottom: 20px;
+}
+
+/* ---- form box ---- */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- input --- */
+
+.form-input {
+    padding: 11px 44px 11px 20px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid var(--input-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.form-input::placeholder {
+    color: var(--input-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.form-input:is(:focus, :hover) {
+    border: 1px solid var(--primary-color);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid var(--input-error-color);
+    outline: transparent;
+    color: var(--input-error-color);
+}
+
+.wrapper {
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: transparent;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 20px;
+}
+
+input:invalid:not(:placeholder-shown)+.error-icon {
+    fill: var(--input-error-color);
+}
+
+/* --- checkbox --- */
+.agreement-label {
+    color: var(--agreement-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.checkbox-span {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--input-color);
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement-input:checked+.agreement-label .checkbox-span {
+    background-color: var(--primary-color);
+    border: none;
+    fill: var(--white-color);
+}
+
+/* --- button send --- */
+.btn-send {
+    border: 0;
+    background-color: var(--primary-color);
+    padding: 17px 65px;
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.5;
+    width: 224px;
+    transition: all 250ms ease-in-out;
+    margin-top: 12px;
+}
+
+.btn-send:is(:hover, :focus) {
+    background-color: #061835;
+}
+
+
+/*? ---------- TABLET ----------*/
+@media screen and (min-width: 768px) {
+
+    .newsletter {
+        padding: 100px 0;
+    }
+  /* ---- text box ---- */
+    .text-input-box .title {
+        font-size: 32px;
+        line-height: 1.4;
+        text-align: left;
+        margin-bottom: 30px;
+        width: 424px;
+    }
+
+    .text-input-box .text {
+        font-size: 18px;
+        margin-bottom: 20px;
+        width: 536px;
+    }
+
+    .text-input-box {
+        margin-bottom: 64px;
+    }
+
+    /* --- input --- */
+    .form-input {
+        width: 536px;
+    }
+
+    .form-input::placeholder {
+        font-size: 18px;
+    }
+
+    /* --- checkbox --- */
+    .agreement-label {
+        font-size: 18px;
+    }
+
+
+    /* --- button send --- */
+    .btn-send {
+        font-size: 18px;
+        line-height: 1.33;
+        margin-top: 10px;
+    }
+}
+
+/*? ---------- DEKSTOP ----------*/
+@media screen and (min-width: 1440px) {
+
+    .newsletter > .container {
+        max-width: 1216px;
+        display: flex;
+        gap: 100px;
+    }
+
+    .newsletter {
+        padding-bottom: 86px;
+    }
+
+    /* ---- text box ---- */
+    .text-input-box .title {
+        margin-bottom: 31px;
+    }
+
+    .text-input-box {
+        margin-bottom: 0;
+    }
+
+    /* --- button send --- */
+    .btn-send {
+        margin-top: 11px;
+    }
+}
