@@ -1,0 +1,61 @@
+<section class="newsletter" id="subscription">
+  <div class="container">
+    <div class="text-input-box">
+      <h2 class="title">Newsletter</h2>
+      <p class="text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="form-box" name="subscribe" autocomplete="off">
+        <input
+          type="text"
+          class="form-input"
+          name="username"
+          placeholder="Name"
+        />
+        <div class="wrapper">
+          <input
+            type="email"
+            name="user-email"
+            class="form-input"
+            placeholder="E-mail"
+          />
+          <svg class="error-icon">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+        </div>
+        <div class="agreement-container">
+          <input
+            type="checkbox"
+            id="user-privacy"
+            name="user-privacy"
+            value="true"
+            class="agreement-input visually-hidden"
+          />
+          <label for="user-privacy" class="agreement-label"
+            ><span class="checkbox-span"
+              ><svg class="true-icon" width="13" height="13">
+                <use href="./img/icons.svg#icon-check"></use></svg
+            ></span>
+            Agree to subscribe to the newsletter</label
+          >
+        </div>
+        <button type="submit" class="btn-send">Send</button>
+      </form>
+    </div>
+    <picture class="image-box">
+      <source
+        srcset="./img/sub-desk-1x.jpg 1x, ./img/sub-desk-2x.jpg 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="./img/sub-tab-1x.jpg 1x, ./img/sub-tab-2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./img/sub-mob-1x.jpg 1x, ./img/sub-mob-2x.jpg 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="./img/sub-tab-1x.jpg" alt="poster newsletter" width="704px" />
+    </picture>
+  </div>
+</section>
