@@ -149,13 +149,10 @@
 .footer-addres-link {
     font-size: 19px;
     letter-spacing: 0.01em;
+    margin-bottom: 64px;
 }
 
 .footer-addres-item:not(:last-child) {
-    margin-bottom: 24px;
-}
-
-.footer-item-block {
     margin-bottom: 24px;
 }
 
@@ -172,6 +169,10 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.07em;
+}
+
+.footer-contacts-list {
+    margin-bottom: 24px;
 }
 }
 
@@ -214,13 +215,11 @@
 
 .footer-contacts-list {
     display: flex;
-    column-gap: 82px;
+    
+    flex-direction: column;
     margin-bottom: 35px;
 }
 
-.footer-item-block {
-    margin-bottom: 0;
-}
 
 .footer-contacts-item {
     width: calc((100% - 82px) / 2);
@@ -250,5 +249,10 @@
 
 .footer-privacy-link {
     transition: opacity 300ms ease, color 300ms ease;
+}
+
+.footer-small-block {
+    display: flex;
+    gap: 82px;
 }
 }
