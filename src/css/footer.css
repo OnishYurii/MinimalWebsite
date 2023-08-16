@@ -105,6 +105,7 @@
 
 @media screen and (min-width: 768px) {
 .footer {
+    padding-top: 44px;
     padding-bottom: 36px;
     }
 
@@ -114,16 +115,12 @@
 }
 
 .footer-logo-container {
-    padding-top: 12px;
+    padding-top: 0;
     margin-bottom: 0;
 }
 
 .logo-icon {
     width: 127px;
-}
-
-.footer-navigation {
-    padding: 8px;
 }
 
 .footer-menu-list {
@@ -139,7 +136,7 @@
 }
 
 .footer-addres {
-    margin-top: -160px;
+    margin-top: -155px;
 }
 
 .footer-addres-list {
@@ -199,6 +196,7 @@
     display: flex;
     margin-top: 0px;
     gap: 87px;
+    margin-bottom: 35px;
 }
 
 .footer-addres-list {
@@ -217,7 +215,7 @@
     display: flex;
     
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 0;
 }
 
 
@@ -254,5 +252,13 @@
 .footer-small-block {
     display: flex;
     gap: 82px;
+}
+
+.footer-menu-item:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.footer-addres-link {
+    margin-bottom: 0;
 }
 }

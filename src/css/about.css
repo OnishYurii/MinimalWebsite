@@ -140,6 +140,11 @@
     gap: 24px;
     justify-content: center;
   }
+
+  .prefer-title {
+    margin-bottom: 23px;
+  }
+  
   .for-backgroung {
     margin-bottom: 0;
     display: flex;
