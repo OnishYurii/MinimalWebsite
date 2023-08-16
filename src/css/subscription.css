@@ -42,7 +42,6 @@
 .form-input {
     padding: 11px 44px 11px 20px;
     width: 100%;
-    max-width: 343px;
     outline: 0;
     border: 1px solid var(--input-color);
     color: var(--primary-color);
@@ -156,7 +155,7 @@ input:invalid:not(:placeholder-shown)+.error-icon {
 
     /* --- input --- */
     .form-input {
-        max-width: 536px;
+        width: 536px;
     }
 
     .form-input::placeholder {
