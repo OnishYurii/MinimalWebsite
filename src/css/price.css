@@ -48,6 +48,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .price > .container {
+    max-width: 1216px;
+  }
+  
   .price {
     padding-bottom: 100px;
     padding-top: 0;
