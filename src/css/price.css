@@ -48,10 +48,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
-  .price > .container {
-    max-width: 1216px;
-  }
   
   .price {
     padding-bottom: 100px;
@@ -65,5 +61,11 @@
 
   .product-price {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .price>.container {
+    max-width: 1216px;
   }
 }
